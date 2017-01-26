@@ -1,6 +1,6 @@
 # Initialize glyphs to be used in the prompt.
 set -q chain_prompt_glyph
-  or set -g chain_prompt_glyph "><(((*>"
+  or set -g chain_prompt_glyph "⋊>"
 set -q chain_git_branch_glyph
   or set -g chain_git_branch_glyph "⎇"
 set -q chain_git_dirty_glyph
