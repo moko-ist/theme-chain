@@ -30,13 +30,13 @@ function __chain_prompt_root
 end
 
 function __chain_prompt_dir
-  __chain_prompt_segment cyan (prompt_pwd)
+  __chain_prompt_segment blue (prompt_pwd)
 end
 
 function __chain_prompt_git
   if test (__chain_git_branch_name)
     set -l git_branch (__chain_git_branch_name)
-    __chain_prompt_segment blue "$chain_git_branch_glyph $git_branch"
+    __chain_prompt_segment cyan "$chain_git_branch_glyph $git_branch"
 
     if test (__chain_is_git_dirty)
       __chain_prompt_segment yellow $chain_git_dirty_glyph
